@@ -1,7 +1,7 @@
 FastAPI uses thread pool executor to handle incoming requests concurrently.
 
 for web --> Starlette 
-            [Routing, Middleware, WebSocket, Static Files and Media, unit-test, compliant with ASGI]
+            [Routing, Middleware, WebSocket, Static Files and Media, unit-test, compliant with ASGI, BG task, Streaming responses, Startup & shutdown events]
 
 for data --> Pydantic
             [Data Validation, Serialization and Deserialization, Error Handling, seeting_up_.env_values]
