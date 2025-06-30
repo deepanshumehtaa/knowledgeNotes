@@ -1,0 +1,40 @@
+FastAPI uses thread pool executor to handle incoming requests concurrently.
+
+for web --> Starlette 
+            [Routing, Middleware, WebSocket, Static Files and Media, unit-test, compliant with ASGI]
+
+for data --> Pydantic
+            [Data Validation, Serialization and Deserialization, Error Handling, seeting_up_.env_values]
+
+            eg:
+            from pydantic import BaseSettings, validator
+            
+            class Settings(BaseSettings):
+                api_key: str
+                debug: bool = False
+
+                class Config:
+                    env_file = '.env'
+
+                @validator('database_url')
+                def validate_database_url(cls, value):
+                  if not value.startswith('postgres://'):
+                    raise ValueError('Database URL must start with postgres://')
+                  return value
+
+            settings = Settings()
+            or
+            os.getenv('api_key')
+            print(settings.database_url)
+
+for handle incoming traffic efficiently --> asyncio
+for CPU-bound tasks --> Thread Pool Executor
+
+other features:
+1. Dependency Injection System
+2. type hinting
+3. Automatic Documentation i.e. swagger
+4. scalable --> Asynchronous I/O + Thread Pool Executor + Lightweight
+5. can be served using Uvicorn(ASGI server) and Gunicorn(WSGI server).
+6. 
+
