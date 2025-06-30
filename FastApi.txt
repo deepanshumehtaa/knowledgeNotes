@@ -38,3 +38,13 @@ other features:
 5. can be served using Uvicorn(ASGI server) and Gunicorn(WSGI server).
 6. 
 
+
+
+Thread Pool in FastAPI ......................................................................................................................
+Starlette uses a thread pool in several scenarios to avoid blocking the event loop:
+
+When you create a synchronous endpoint using `def` instead of `async def`
+When serving files with FileResponse
+When handling file uploads with UploadFile
+When running synchronous background tasks with BackgroundTask
+And some other scenarios that may not be documented...
