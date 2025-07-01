@@ -10,3 +10,5 @@ Apache Kafka is a distributed event streaming platform with several core compone
 7. Consumer Group	A group of consumers that jointly consume a topic (each message goes to only one consumer in the group)
 
 see the fig 1 in readme for workflow diagram
+
+![image](https://github.com/user-attachments/assets/e6141d1a-fb36-4493-b240-3674fa1db795)
