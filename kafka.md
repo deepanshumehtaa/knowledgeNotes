@@ -16,3 +16,9 @@ Workflow diagram:
 Task Scheduling:
 
 ![image](https://github.com/user-attachments/assets/954132bd-936c-4d7f-9ed6-2fd7e05d88e2)
+
+
+
+## How about kafka as Task Queues ??
+
+let's 1st see diffe
