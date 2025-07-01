@@ -9,6 +9,10 @@ Apache Kafka is a distributed event streaming platform with several core compone
 6. Offset	==> A unique ID assigned to each message within a partition (like a primary key)
 7. Consumer Group	A group of consumers that jointly consume a topic (each message goes to only one consumer in the group)
 
-see the fig 1 in readme for workflow diagram
+Workflow diagram:
 
 ![image](https://github.com/user-attachments/assets/e6141d1a-fb36-4493-b240-3674fa1db795)
+
+Task Scheduling:
+
+![image](https://github.com/user-attachments/assets/954132bd-936c-4d7f-9ed6-2fd7e05d88e2)
