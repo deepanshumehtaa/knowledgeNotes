@@ -24,9 +24,10 @@ Task Scheduling:
 
 
 ## How about kafka as Task Queues ??
-
+```
+              | Kafka                          | RabbitMQ 
 Data Model	  | Persistent log (append-only)	| Ephemeral queues (FIFO)
 Task ACKs	    | Manual offset commits         | Built-in ACK/NACK
 Retries	      | No native retry logic         | retry mechanisms
 Priority	    | No native support	            | Priority queues available
-
+```
