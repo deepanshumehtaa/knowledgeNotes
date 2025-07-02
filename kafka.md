@@ -1,4 +1,8 @@
-Apache Kafka is a distributed event streaming platform with several core components that work together to provide its functionality. Here's a breakdown of its main components:
+### Apache Kafka is a distributed event streaming platform used for real-time data processing, where producers send messages (events) to Kafka topics and consumers read those messages
+with several core components that work together to provide its functionality. 
+
+
+## Here's a breakdown of its main components:
 
 > Core Components:
 1. Producer	==> Applications that publish (write) events to Kafka topics
