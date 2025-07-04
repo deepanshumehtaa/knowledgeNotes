@@ -31,3 +31,21 @@ Task ACKs	    | Manual offset commits         | Built-in ACK/NACK
 Retries	      | No native retry logic         | retry mechanisms
 Priority	    | No native support	            | Priority queues available
 ```
+
+## connecting to kafka has many ways (protocol):
+1. PLAINTEXT
+2. SSL (Secure Sockets Layer) i.e. SSL/TLS encrypts data in transit between clients and brokers.
+3. SASL_SSL (Simple Authentication and Security Layer)
+   mechanisms:
+     PLAIN (username/password)
+     GSSAPI (Kerberos)
+     SCRAM (Salted Challenge Response Authentication Mechanism)
+5. SASL_PLAINTEXT
+
+Q: what is Kerberos ?
+A: Is SSO auth protocol, Three Main Components:
+1. Client: The user or service requesting access to a resource.
+2. Server: The resource or service being protected.
+3. Key Distribution Center (KDC): A trusted 3rd party system that manages authentication.
+
+
